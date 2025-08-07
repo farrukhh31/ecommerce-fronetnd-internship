@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+
+            <div class="head-logo border">
+                <a href="#">
+                    <div class="logo">
+                        <img src="assets/logo-colored.png" alt="brand">
+                    </div>
+                </a>
+            </div>
+
+            <div class="head-search">
+                <input placeholder="  Search " class="input-option">
+                <select class="select-options" name="category">
+                    <option value="">All Category</option>
+
+                    <optgroup label="Electronics">
+                        <option value="mobiles">Mobile Phones</option>
+                        <option value="laptops">Laptops & Tablets</option>
+                        <option value="smart-home">Smart Home Devices</option>
+                        <option value="wearables">Wearables & Smartwatches</option>
+                    </optgroup>
+
+                    <optgroup label="Fashion">
+                        <option value="mens">Men's Wear</option>
+                        <option value="womens">Women's Wear</option>
+                        <option value="kids">Kids’ Clothing</option>
+                        <option value="footwear">Shoes & Footwear</option>
+                    </optgroup>
+
+                    <optgroup label="Home & Living">
+                        <option value="furniture">Furniture</option>
+                        <option value="kitchen">Kitchen Essentials</option>
+                        <option value="decor">Home Decor</option>
+                        <option value="bedding">Bedding & Linen</option>
+                    </optgroup>
+
+                    <optgroup label="Beauty & Personal Care">
+                        <option value="skincare">Skincare</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="haircare">Haircare</option>
+                    </optgroup>
+
+                    <optgroup label="Sports & Outdoors">
+                        <option value="fitness">Fitness Equipment</option>
+                        <option value="outdoor">Outdoor Gear</option>
+                    </optgroup>
+                </select>
+                <button class="search-button">Search</button>
+            </div>
+            <div class="actions">
+
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                </div>
+                <div class="message">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Message</p>
+                </div>
+                <div class="orders">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Orders</p>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <div class="category">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>All Category</p>
+                </div>
+                <a href="#">
+                    <p>Hot Offers</p>
+                </a>
+                <a href="#">
+                    <p>Gift Boxes </p>
+                </a>
+                <a href="#">
+                    <p>Projects</p>
+                </a>
+                <a href="#">
+                    <p>Menu Item</p>
+                </a>
+                <select class="Help">
+                    <option>
+                        Help
+                    </option>
+                </select>
+            </div>
+            <div class="payment">
+                <select class="payment-currency">
+                    <option value="en-usd">English, USD</option>
+                    <option value="fr-eur">Français, EUR</option>
+                    <option value="es-eur">Español, EUR</option>
+                    <option value="de-eur">Deutsch, EUR</option>
+                    <option value="ar-sar">العربية, SAR</option>
+                    <option value="hi-inr">हिन्दी, INR</option>
+                    <option value="zh-cny">中文, CNY</option>
+                    <option value="jp-jpy">日本語, JPY</option>
+                    <option value="ru-rub">Русский, RUB</option>
+                    <option value="pk-pkr">Urdu, PKR</option>
+                </select>
+            </div>
+            <div class="shipto-select">
+                <div class="shipto-selected">
+                    Ship to <img src="https://flagcdn.com/w40/us.png" alt="USA">
+                </div>
+                <div class="shipto-options">
+                    <div data-value="us"><img src="https://flagcdn.com/w40/us.png" alt="USA"> United States</div>
+                    <div data-value="fr"><img src="https://flagcdn.com/w40/fr.png" alt="France"> France</div>
+                    <div data-value="es"><img src="https://flagcdn.com/w40/es.png" alt="Spain"> Spain</div>
+                    <div data-value="de"><img src="https://flagcdn.com/w40/de.png" alt="Germany"> Germany</div>
+                    <div data-value="sa"><img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia"> Saudi Arabia
+                    </div>
+                    <div data-value="in"><img src="https://flagcdn.com/w40/in.png" alt="India"> India</div>
+                    <div data-value="cn"><img src="https://flagcdn.com/w40/cn.png" alt="China"> China</div>
+                    <div data-value="jp"><img src="https://flagcdn.com/w40/jp.png" alt="Japan"> Japan</div>
+                    <div data-value="ru"><img src="https://flagcdn.com/w40/ru.png" alt="Russia"> Russia</div>
+                    <div data-value="pk"><img src="https://flagcdn.com/w40/pk.png" alt="Pakistan"> Pakistan</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section-main">
+            <div class="menu">
+                <div class="menu-1 div-size">
+                    <p>Automobiles</p>
+                </div>
+                <div class="menu-2 div-size">
+                    <p>Clothes and wear</p>
+                </div>
+                <div class="menu-3 div-size">
+                    <p>Home interiors</p>
+                </div>
+                <div class="menu-4 div-size">
+                    <p>Computer and tech</p>
+                </div>
+                <div class="menu-5 div-size">
+                    <p>Tools, equipments</p>
+                </div>
+                <div class="menu-5 div-size">
+                    <p>Sports and outdoor</p>
+                </div>
+                <div class="menu-6 div-size">
+                    <p>Animal and pets</p>
+                </div>
+                <div class="menu-7 div-size">
+                    <p>Machinery Tools</p>
+                </div>
+                <div class="menu-8 div-size">
+                    <p>Kitchen</p>
+                </div>
+                <div class="menu-9 div-size">
+                    <p>More Category</p>
+                </div>
+            </div>
+            <div class="banner"></div>
+            <div class="user-info">
+                <div class="block-1"></div>
+                <div class="block-2">
+                    <p>Get US $10 off with a new supplier</p>
+                    <form id="supplierForm">
+                        <input type="text" name="username" class="b4-input" placeholder="Your Name or Email" required />
+                        <button type="submit">Claim Offer</button>
+                    </form>
+                    <div id="supplierResponse"></div>
+                </div>
+
+                <div class="block-3">
+                    <p>Send quotes with supplier</p>
+                    <form id="quoteForm">
+                        <textarea name="notes" class="b3-text"
+                            placeholder="Any specific material, size, packaging, etc."></textarea>
+                        <button type="submit">Send Quote</button>
+                    </form>
+                    <div id="responseMsg"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
