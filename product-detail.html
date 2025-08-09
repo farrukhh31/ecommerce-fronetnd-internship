@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poduct Detail page</title>
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Bootstrap Icons -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/> -->
+
+</head>
+<body>
+<header>
+        <div class="head">
+
+            <div class="head-logo border">
+                <a href="#">
+                    
+                        <img src="assets/logo-colored.png" alt="brand">
+                   
+                </a>
+            </div>
+
+            <div class="head-search">
+                <input placeholder="  Search " class="input-option">
+                <select class="select-options" name="category">
+                    <option value="">All Category</option>
+
+                    <optgroup label="Electronics">
+                        <option value="mobiles">Mobile Phones</option>
+                        <option value="laptops">Laptops & Tablets</option>
+                        <option value="smart-home">Smart Home Devices</option>
+                        <option value="wearables">Wearables & Smartwatches</option>
+                    </optgroup>
+
+                    <optgroup label="Fashion">
+                        <option value="mens">Men's Wear</option>
+                        <option value="womens">Women's Wear</option>
+                        <option value="kids">Kids’s Clothing</option>
+                        <option value="footwear">Shoes & Footwear</option>
+                    </optgroup>
+
+                    <optgroup label="Home & Living">
+                        <option value="furniture">Furniture</option>
+                        <option value="kitchen">Kitchen Essentials</option>
+                        <option value="decor">Home Decor</option>
+                        <option value="bedding">Bedding & Linen</option>
+                    </optgroup>
+
+                    <optgroup label="Beauty & Personal Care">
+                        <option value="skincare">Skincare</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="haircare">Haircare</option>
+                    </optgroup>
+
+                    <optgroup label="Sports & Outdoors">
+                        <option value="fitness">Fitness Equipment</option>
+                        <option value="outdoor">Outdoor Gear</option>
+                    </optgroup>
+                </select>
+                <button class="search-button">Search</button>
+            </div>
+            <div class="actions">
+
+                <a href=# style="text-decoration-line: none;"><div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                </div></a>
+               <a href=# style="text-decoration-line: none;"><div class="message">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Message</p>
+                </div></a>
+                <a href=# style="text-decoration-line: none;"><div class="orders">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Orders</p>
+                </div></a>
+                <a href=# style="text-decoration-line: none;"><div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <div class="category">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>All Category</p>
+                </div>
+                <a href="#">
+                    <p>Hot Offers</p>
+                </a>
+                <a href="#">
+                    <p>Gift Boxes </p>
+                </a>
+                <a href="#">
+                    <p>Projects</p>
+                </a>
+                <a href="#">
+                    <p>Menu Item</p>
+                </a>
+                <select class="Help">
+                    <option>
+                        Help
+                    </option>
+                </select>
+            </div>
+            <div class="payment">
+                <select class="payment-currency">
+                    <option value="en-usd">English, USD</option>
+                    <option value="fr-eur">Français, EUR</option>
+                    <option value="es-eur">Español, EUR</option>
+                    <option value="de-eur">Deutsch, EUR</option>
+                    <option value="ar-sar">العربية, SAR</option>
+                    <option value="hi-inr">हिन्दी, INR</option>
+                    <option value="zh-cny">中文, CNY</option>
+                    <option value="jp-jpy">日本語, JPY</option>
+                    <option value="ru-rub">Русский, RUB</option>
+                    <option value="pk-pkr">Urdu, PKR</option>
+                </select>
+            </div>
+            <div class="shipto-select">
+                <div class="shipto-selected">
+                    Ship to <img src="https://flagcdn.com/w40/us.png" alt="USA">
+                </div>
+                <div class="shipto-options">
+                    <div data-value="us"><img src="https://flagcdn.com/w40/us.png" alt="USA"> United States</div>
+                    <div data-value="fr"><img src="https://flagcdn.com/w40/fr.png" alt="France"> France</div>
+                    <div data-value="es"><img src="https://flagcdn.com/w40/es.png" alt="Spain"> Spain</div>
+                    <div data-value="de"><img src="https://flagcdn.com/w40/de.png" alt="Germany"> Germany</div>
+                    <div data-value="sa"><img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia"> Saudi Arabia
+                    </div>
+                    <div data-value="in"><img src="https://flagcdn.com/w40/in.png" alt="India"> India</div>
+                    <div data-value="cn"><img src="https://flagcdn.com/w40/cn.png" alt="China"> China</div>
+                    <div data-value="jp"><img src="https://flagcdn.com/w40/jp.png" alt="Japan"> Japan</div>
+                    <div data-value="ru"><img src="https://flagcdn.com/w40/ru.png" alt="Russia"> Russia</div>
+                    <div data-value="pk"><img src="https://flagcdn.com/w40/pk.png" alt="Pakistan"> Pakistan</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <main style="background-color: #F8F9FA;"class="container">
+    <div style="position: relative; right:440px;"class="breadcrumb container">
+    <a href="#">Home</a> &gt;
+    <a href="#">Clothing</a> &gt;
+    <a href="#">Men's wear</a> &gt;
+    <a href="#">Summer clothing</a>
+  </div>
+    <section class="product-section">
+      <!-- Left: images -->
+      <div class="product-images">
+        <div style="width: 345px; height: 345px;" class="main-image">
+          <img src="assets/web-detail-mainpic.png" alt="Main product">
+        </div>
+        <div style="width: 56px; height: 56px;" class="thumbnail-images">
+          <img src="assets/detail-thumbnail1.png" alt="">
+          <img src="assets/detail-thumbnail2.png" alt="">
+          <img src="assets/detail-thumbnail3.png" alt="">
+          <img src="assets/detail-thumbnail4.png" alt="">
+        </div>
+      </div>
+
+      <!-- Center: product info -->
+      <div class="product-info">
+        <p class="stock-status">✅ In stock</p>
+
+        <div class="title-like-row">
+          <h1 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+
+          <!-- Like / Save block -->
+          <div class="like-block" title="Save for later">
+            <button class="heart-btn" aria-label="Save">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path d="M12 21s-7.2-4.6-9.2-7.1C-0.3 9.4 4.6 4 8.7 6.1 10.1 7 12 9 12 9s1.9-2 3.3-2.9C19.4 4 24.3 9.4 21.2 13.9 19.2 16.4 12 21 12 21z" fill="currentColor"/>
+              </svg>
+            </button>
+            <span class="like-text">Save for later</span>
+          </div>
+        </div>
+        <div style="width:366px; height: 20px;" class="rating-bar">
+            <img src="assets/rating-bar.png" alt="ratings">
+        </div>
+
+        <div class="price-section">
+          <div class="price-box">
+            <div class="old-price">$98.00</div>
+            <div class="new-price">$90.00</div>
+            <div class="per-piece">50 - 99 pcs</div>
+          </div>
+          <div class="price-box">
+            <div class="old-price">$96.00</div>
+            <div class="new-price">$85.00</div>
+            <div class="per-piece">100 - 499 pcs</div>
+          </div>
+          <div class="price-box">
+            <div class="old-price">$94.00</div>
+            <div class="new-price">$78.00</div>
+            <div class="per-piece">500+ pcs</div>
+          </div>
+        </div>
+
+        <pre><p class="price-note"><strong>Price:</strong>                Negotiable</p></pre>
+
+        <ul class="product-details">
+          <pre><li><strong>Type:</strong>                   Classic shoes</li></pre>
+         <pre><li><strong>Material:</strong>              Plastic material</li></pre>
+          <pre><li><strong>Design:</strong>                Modern nice</li></pre>
+         <pre><li><strong>Customization:</strong>   Customized logo and custom packaging</li></pre> 
+          <pre><li><strong>Protection:</strong>           Refund policy</li></pre>
+          <pre><li><strong>Warranty:</strong>             2 years full warranty</li></pre>
+        </ul>
+      </div>
+
+      <!-- Right: supplier + you-may-like -->
+      <aside class="right-col">
+        <div class="supplier-info card">
+          <p  style="margin-bottom: 10px; font-weight: 600;"class="supplier-label">Supplier</p>
+          <h3 style="margin-bottom: 20px; " class="supplier-name">Guangzhou Trading LLC</h3>
+          <p style="margin-bottom: 20px; font-size: 16px;" class="supplier-location">Germany, Berlin</p>
+          <p style="margin-bottom: 20px; font-size: 16px;" class="supplier-status">Verified seller </p>
+          <p style="margin-bottom: 50px; font-size: 16px;" class="supplier-status">World wide Shipping </p>
+
+          <button class="inquiry-btn">Send Inquiry</button>
+          <button class="profile-btn">Seller's profile</button>
+
+          <div class="save-compare">
+            <button class="small">❤ Save</button>
+            <button class="small">🔁 Compare</button>
+          </div>
+        </div>
+
+        <div style="height: 618px;" class="you-may-like card">
+          <h4>You may like</h4>
+          <ul class="liked-list">
+            <li>
+              <div style="width:80px; height: 80px;" class="liked-list-img"><img src="assets/detail-like-img1.png"></div>
+              <div class="liked-info">
+                <pre><div class="liked-title">Men Blazers Set 
+Elegant format</div></pre>
+                <div class="liked-price">$18 - $30</div>
+              </div>
+            </li>
+            <li>
+              <div style="width:80px; height: 80px;" class="liked-list-img"><img src="assets/detail-like-img2.png"></div>
+              <div class="liked-info">
+                <pre><div class="liked-title">Men Shirt Sleeve 
+Polo Contrast</div></pre>
+                <div class="liked-price">$7.50 - $22</div>
+              </div>
+            </li>
+            <li>
+              <div style="width:80px; height: 80px;" class="liked-list-img"><img src="assets/detail-like-img3.png"></div>
+              <div class="liked-info">
+                <pre><div class="liked-title">Apple Watch Series 
+Space Gray</div></pre>
+                <div class="liked-price">$9 - $20</div>
+              </div>
+            </li>
+            <li>
+              <div style="width:80px; height: 80px;" class="liked-list-img"><img src="assets/detail-like-img4.png"></div>
+              <div class="liked-info">
+                <pre><div class="liked-title">Basketball Crew 
+Socks Long Stuff</div></pre>
+                <div class="liked-price">$9 - $20</div>
+              </div>
+            </li>
+            <li>
+              <div style="width:80px; height: 80px;" class="liked-list-img"><img src="assets/detail-like-img5.png"></div>
+              <div class="liked-info">
+                <pre><div class="liked-title">New Summer Men's  
+castrol T-Shirts</div></pre>
+                <div class="liked-price">$79 - $90</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Tabs -->
+    <section style="position: absolute; left:24px;top:680px; width: 950px; height: 615px;" class="tabs-section card">
+      <nav class="tabs">
+        <button class="tab active">Description</button>
+        <button class="tab">Reviews</button>
+        <button class="tab">Shipping</button>
+        <button class="tab">About seller</button>
+      </nav>
+
+      <div class="tab-content">
+        <pre><p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat dolores, reiciendis dolore corrupti iste fuga quisquam odio
+        aliquid saepe quo nesciunt,ipsa minus, magnam molestiae non nulla voluptatem tempore? Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Animi fuga, eos culpa enim distinctio vel illo iusto fugiat, ipsa qui aperiam ratione labore accusantium magnam
+        perferendis suscipit praesentium rem blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque optio nulla 
+        pariatur nemo illo magni labore amet, nostrum saepe laudantium temporibus fugiat modi. Nemo illo aspernatur deleniti? Libero, illum!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat deserunt assumenda, officiis facere dolorum laboriosam quidem libero 
+        maxime mollitia vero iusto, culpa, explicabo sunt beatae a? Earum, commodi. Nulla, iure!
+        </p></pre>
+
+        <table class="spec-table">
+          <tr><td>Model</td><td>4876B987</td></tr>
+          <tr><td>Style</td><td>Classic style</td></tr>
+          <tr><td>Certificate</td><td>ISO-2023</td></tr>
+          <tr><td>Size</td><td>34mm x 450mm x 19mm</td></tr>
+          <tr><td>Memory</td><td>36GB RAM</td></tr>
+        </table>
+
+        <ul style="color: #505050; font-size: 16px; margin-top: 30px; line-height: 30px; margin-left: 20px;" class="description-list">
+          <li>Some great feature name here</li>
+          <li>Some great feature, consectetur</li>
+        </ul>
+      </div>
+    </section>
+    </main>
+  <footer>
+  <!-- Related products (separate row under the main container) -->
+  <section class="related-products container related-card">
+    <h3>Related products</h3>
+    <div class="detail-product-grid">
+      <div class="detail-product-card"><img src="assets/related-pro4.png" alt=""><pre><p>Xiaomi Redmi 8 
+Original </p></pre>
+        <p style="color: #8B96A5; font-size: 14px;">$32.00-$40.00</p>
+     </div>
+      <div class="detail-product-card"><img src="assets/related-pro5.png" alt=""><pre><p>Xiaomi Redmi 8
+Original </p></pre>
+    <p style="color: #8B96A5; font-size: 14px;">$52.00-$70.00</p></div>
+      <div class="detail-product-card"><img src="assets/related-pro1.png" alt=""><pre><p>Xiaomi Redmi 8
+Original </p></pre>
+    <p style="color: #8B96A5; font-size: 14px;">$32.00-$40.00</p></div>
+      <div class="detail-product-card"><img src="assets/related-pro2.png" alt=""><pre><p>Xiaomi Redmi 8 
+Original </p></pre>
+    <p style="color: #8B96A5; font-size: 14px;">$32.00-$40.00</p></div>
+      <div class="detail-product-card"><img src="assets/related-pro3.png"><pre><p>Xiaomi Redmi 8 
+Original </p></pre>
+    <p style="color: #8B96A5; font-size: 14px;">$32.00-$100.00</p></div>
+      <div class="detail-product-card"><img src="assets/related-pro6.png" alt=""><pre><p>Xiaomi Redmi 8 
+Original </p></pre>
+    <p style="color: #8B96A5; font-size: 14px;">$12.00-$40.00</p></div>
+    </div>
+  </section>
+
+  <!-- Full-width discount banner -->
+  <section class="footer-banner">
+    <div class="banner-inner container">
+      <div class="banner-text">
+        <h3>Super discount on more than 100 USD</h3>
+        <p>Hurry up! Save more when you buy more</p>
+      </div>
+      <div class="banner-cta">
+        <button class="shop-btn">Shop now</button>
+      </div>
+    </div>
+  </section>
+
+<footer>
+        <div class="foot-info-section">
+            <div class="social-media-block">
+                <div class="brand-logo"></div>
+                <pre><p style="margin-top: 12px; color: #505050; line-height: 24px; font-weight: 400;">Best information about the company 
+gies here but now lorem ipsum is</p></pre>
+                <div class="social-media-icons">
+                    <div class="icon1 size"></div>
+                    <div class="icon2 size"></div>
+                    <div class="icon3 size"></div>
+                    <div class="icon4 size"></div>
+                    <div class="icon5 size"></div>
+                </div>
+            </div>
+
+            <div class="about-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">About</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>About Us</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Find Store</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Categories</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Blogs</li></a>
+</ul>
+</div>
+            <div class="partnership-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">Partnership</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>About Us</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Find Store</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Categories</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Blogs</li></a>
+</ul>
+</div>
+            <div class="info-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">Information</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Help Centre</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Money Refund</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Shipping</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Contact us</li></a>
+</ul>
+            </div>
+            <div class="users-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">For users</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Login</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Register</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Settings</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>My Orders</li></a>
+</ul>
+            </div>
+            <div class="get-app-block">
+                <h4 style=" font-weight: 500; font-size:18px; color: #1C1C1C;">Get app</h4>
+                <div class="apple-button"></div>
+                <div class="google-play-button"></div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <p>© 2025 Ecommerce. </p>
+            <div class="payment">
+                <select class="payment-currency">
+                    <option value="en-usd">English</option>
+                    <option value="fr-eur">Français</option>
+                    <option value="es-eur">Español</option>
+                    <option value="de-eur">Deutsch</option>
+                    <option value="ar-sar">العربية</option>
+                    <option value="hi-inr">हिन्दी</option>
+                    <option value="zh-cny">中文</option>
+                    <option value="jp-jpy">日本語</option>
+                    <option value="ru-rub">Русский</option>
+                    <option value="pk-pkr">Urdu</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    </body>
+    </html>

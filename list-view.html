@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile accessories</title>
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Bootstrap Icons -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/> -->
+
+</head>
+<body>
+<header>
+        <div class="head">
+
+            <div class="head-logo border">
+                <a href="#">
+                    
+                        <img src="assets/logo-colored.png" alt="brand">
+                   
+                </a>
+            </div>
+
+            <div class="head-search">
+                <input placeholder="  Search " class="input-option">
+                <select class="select-options" name="category">
+                    <option value="">All Category</option>
+
+                    <optgroup label="Electronics">
+                        <option value="mobiles">Mobile Phones</option>
+                        <option value="laptops">Laptops & Tablets</option>
+                        <option value="smart-home">Smart Home Devices</option>
+                        <option value="wearables">Wearables & Smartwatches</option>
+                    </optgroup>
+
+                    <optgroup label="Fashion">
+                        <option value="mens">Men's Wear</option>
+                        <option value="womens">Women's Wear</option>
+                        <option value="kids">Kids’s Clothing</option>
+                        <option value="footwear">Shoes & Footwear</option>
+                    </optgroup>
+
+                    <optgroup label="Home & Living">
+                        <option value="furniture">Furniture</option>
+                        <option value="kitchen">Kitchen Essentials</option>
+                        <option value="decor">Home Decor</option>
+                        <option value="bedding">Bedding & Linen</option>
+                    </optgroup>
+
+                    <optgroup label="Beauty & Personal Care">
+                        <option value="skincare">Skincare</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="haircare">Haircare</option>
+                    </optgroup>
+
+                    <optgroup label="Sports & Outdoors">
+                        <option value="fitness">Fitness Equipment</option>
+                        <option value="outdoor">Outdoor Gear</option>
+                    </optgroup>
+                </select>
+                <button class="search-button">Search</button>
+            </div>
+            <div class="actions">
+
+                <a href=# style="text-decoration-line: none;"><div class="profile size">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                </div></a>
+               <a href=# style="text-decoration-line: none;"><div class="message size">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Message</p>
+                </div></a>
+                <a href=# style="text-decoration-line: none;"><div class="orders size">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Orders</p>
+                </div></a>
+                <a href=# style="text-decoration-line: none;"><div class="cart size">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div></a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <div class="category">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>All Category</p>
+                </div>
+                <a href="#">
+                    <p>Hot Offers</p>
+                </a>
+                <a href="#">
+                    <p>Gift Boxes </p>
+                </a>
+                <a href="#">
+                    <p>Projects</p>
+                </a>
+                <a href="#">
+                    <p>Menu Item</p>
+                </a>
+                <select class="Help">
+                    <option>
+                        Help
+                    </option>
+                </select>
+            </div>
+            <div class="payment">
+                <select class="payment-currency">
+                    <option value="en-usd">English, USD</option>
+                    <option value="fr-eur">Français, EUR</option>
+                    <option value="es-eur">Español, EUR</option>
+                    <option value="de-eur">Deutsch, EUR</option>
+                    <option value="ar-sar">العربية, SAR</option>
+                    <option value="hi-inr">हिन्दी, INR</option>
+                    <option value="zh-cny">中文, CNY</option>
+                    <option value="jp-jpy">日本語, JPY</option>
+                    <option value="ru-rub">Русский, RUB</option>
+                    <option value="pk-pkr">Urdu, PKR</option>
+                </select>
+            </div>
+            <div class="shipto-select">
+                <div class="shipto-selected">
+                    Ship to <img src="https://flagcdn.com/w40/us.png" alt="USA">
+                </div>
+                <div class="shipto-options">
+                    <div data-value="us"><img src="https://flagcdn.com/w40/us.png" alt="USA"> United States</div>
+                    <div data-value="fr"><img src="https://flagcdn.com/w40/fr.png" alt="France"> France</div>
+                    <div data-value="es"><img src="https://flagcdn.com/w40/es.png" alt="Spain"> Spain</div>
+                    <div data-value="de"><img src="https://flagcdn.com/w40/de.png" alt="Germany"> Germany</div>
+                    <div data-value="sa"><img src="https://flagcdn.com/w40/sa.png" alt="Saudi Arabia"> Saudi Arabia
+                    </div>
+                    <div data-value="in"><img src="https://flagcdn.com/w40/in.png" alt="India"> India</div>
+                    <div data-value="cn"><img src="https://flagcdn.com/w40/cn.png" alt="China"> China</div>
+                    <div data-value="jp"><img src="https://flagcdn.com/w40/jp.png" alt="Japan"> Japan</div>
+                    <div data-value="ru"><img src="https://flagcdn.com/w40/ru.png" alt="Russia"> Russia</div>
+                    <div data-value="pk"><img src="https://flagcdn.com/w40/pk.png" alt="Pakistan"> Pakistan</div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main class="main-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h4>Category</h4>
+    <ul>
+      <li><a href="#">Mobile accessory</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Smartphones</a></li>
+    </ul>
+
+    <h4>Brands</h4>
+    <ul>
+      <li><input type="checkbox"> Samsung</li>
+      <li><input type="checkbox"> Apple</li>
+      <li><input type="checkbox"> Oppo</li>
+      <li><input type="checkbox"> Huawei</li>
+    </ul>
+
+    <h4>Features</h4>
+    <ul>
+      <li><input type="checkbox"> Metal</li>
+      <li><input type="checkbox"> Plastic cover</li>
+      <li><input type="checkbox"> 8GB RAM</li>
+      <li><input type="checkbox"> Large Memory</li>
+    </ul>
+
+    <h4>Price range</h4>
+    <div class="price-range">
+      <input type="number" placeholder="Min">
+      <input type="number" placeholder="Max">
+    </div>
+    <button class="btn">Apply</button>
+
+    <h4>Condition</h4>
+    <ul>
+      <li><input type="checkbox"> Brand new</li>
+      <li><input type="checkbox"> Refurbished</li>
+      <li><input type="checkbox"> Used</li>
+    </ul>
+
+    <h4>Ratings</h4>
+    <ul>
+      <li>⭐⭐⭐⭐⭐</li>
+      <li>⭐⭐⭐⭐</li>
+      <li>⭐⭐⭐</li>
+    </ul>
+  </aside>
+
+  <!-- Main Products -->
+  <section class="products">
+  <div class="items-bar">
+    <div>12,311 items in <strong>Mobile accessory</strong></div>
+    <div class="filters">
+      <button class="btn">Verified Only</button>
+      <button class="btn">Featured</button>
+      List button is active here 
+      <a style="text-decoration:none" href="grid-view.html" class="category-link">
+        <button id="gridViewBtn" class="btn">🔳</button>
+      </a>
+      <a style="text-decoration:none" href="list-view.html" class="category-link">
+        <button id="listViewBtn" class="btn active">📄</button>
+      </a>
+    </div>
+    
+  </div>
+    
+<div id="productContainer"class="product-list product-container">
+  <!-- Product 1 -->
+  <div class="product-list-item">
+    <img src="assets/mobile.png" alt="Product 1">
+    <div class="product-info">
+      <h6>Wireless Earbuds</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.0)</div>
+      <p class="description">High-quality sound with noise cancellation. Bluetooth 5.0 and long battery life.</p>
+      <div class="price">$29.99 <span class="old-price">$39.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-list-item">
+    <img src="assets/mobile-2.png" alt="Product 2">
+    <div class="product-info">
+      <h6>Fast Charging Cable</h6>
+      <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+      <p class="description">Durable braided cable, supports fast charging for Android & iPhone.</p>
+      <div class="price">$9.99 <span class="old-price">$14.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-list-item">
+    <img src="assets/mobile-3.png" alt="Product 3">
+    <div class="product-info">
+      <h6>Phone Stand Holder</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.3)</div>
+      <p class="description">Adjustable phone stand for desk, perfect for watching videos or video calls.</p>
+      <div class="price">$12.50 <span class="old-price">$17.00</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-list-item">
+    <img src="assets/tablet.png"Product 4">
+    <div class="product-info">
+      <h6>Bluetooth Speaker</h6>
+      <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+      <p class="description">Portable wireless speaker with deep bass and waterproof design.</p>
+      <div class="price">$45.00 <span class="old-price">$59.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-list-item">
+    <img src="assets/laptop.png" alt="Product 5">
+    <div class="product-info">
+      <h6>Smartwatch</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+      <p class="description">Track your health, fitness, and notifications with this smartwatch.</p>
+      <div class="price">$79.99 <span class="old-price">$99.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-list-item">
+    <img src="assets/canon-camera.png" alt="Product 6">
+    <div class="product-info">
+      <h6>Car Phone Mount</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.2)</div>
+      <p class="description">Secure and adjustable mount for your car dashboard or windshield.</p>
+      <div class="price">$15.99 <span class="old-price">$20.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-list-item">
+    <img src="assets/smart-watch.png " alt="Product 7">
+    <div class="product-info">
+      <h6>Power Bank</h6>
+      <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+      <p class="description">High-capacity portable charger with fast charging technology.</p>
+      <div class="price">$25.00 <span class="old-price">$32.00</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="product-list-item">
+    <img src="assets/mobile-3.png" alt="Product 8">
+    <div class="product-info">
+      <h6>Gaming Headset</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.4)</div>
+      <p class="description">Comfortable over-ear gaming headset with surround sound.</p>
+      <div class="price">$39.99 <span class="old-price">$49.99</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-list-item">
+    <img src="assets/tablet.png" alt="Product 9">
+    <div class="product-info">
+      <h6>Tablet Case</h6>
+      <div class="rating">⭐⭐⭐⭐☆ (4.1)</div>
+      <p class="description">Shockproof protective case for tablets, multiple colors available.</p>
+      <div class="price">$19.50 <span class="old-price">$25.00</span></div>
+      <button class="btn">View Details</button>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+        <div class="foot-info-section">
+            <div class="social-media-block">
+                <div class="brand-logo"></div>
+                <pre><p style="margin-top: 12px; color: #505050; line-height: 24px; font-weight: 400;">Best information about the company 
+gies here but now lorem ipsum is</p></pre>
+                <div class="social-media-icons">
+                    <div class="icon1 size"></div>
+                    <div class="icon2 size"></div>
+                    <div class="icon3 size"></div>
+                    <div class="icon4 size"></div>
+                    <div class="icon5 size"></div>
+                </div>
+            </div>
+
+            <div class="about-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">About</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>About Us</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Find Store</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Categories</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Blogs</li></a>
+</ul>
+</div>
+            <div class="partnership-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">Partnership</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>About Us</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Find Store</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Categories</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Blogs</li></a>
+</ul>
+</div>
+            <div class="info-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">Information</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Help Centre</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Money Refund</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Shipping</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Contact us</li></a>
+</ul>
+            </div>
+            <div class="users-block size">
+                <h4 style="padding-left: 5px; font-weight: 500; font-size:18px; color: #1C1C1C;">For users</h4>
+                <ul class="lists">
+   <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Login</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Register</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>Settings</li></a>
+    <a href="#" style="text-decoration-line: none; color:#8B96A5"><li>My Orders</li></a>
+</ul>
+            </div>
+            <div class="get-app-block">
+                <h4 style=" font-weight: 500; font-size:18px; color: #1C1C1C;">Get app</h4>
+                <div class="apple-button"></div>
+                <div class="google-play-button"></div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <p>© 2025 Ecommerce. </p>
+            <div class="payment">
+                <select class="payment-currency">
+                    <option value="en-usd">English</option>
+                    <option value="fr-eur">Français</option>
+                    <option value="es-eur">Español</option>
+                    <option value="de-eur">Deutsch</option>
+                    <option value="ar-sar">العربية</option>
+                    <option value="hi-inr">हिन्दी</option>
+                    <option value="zh-cny">中文</option>
+                    <option value="jp-jpy">日本語</option>
+                    <option value="ru-rub">Русский</option>
+                    <option value="pk-pkr">Urdu</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    </body>
+    </html>
