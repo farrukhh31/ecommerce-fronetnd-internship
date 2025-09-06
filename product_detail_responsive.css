@@ -1,0 +1,377 @@
+/* =============================Header=========================================== */
+@media (max-width: 1024px) {
+    main,
+    body {
+        max-width: 100%;
+        
+        align-items: center;
+        /* justify-content: flex-start; */
+    }
+  .head {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* padding: 10px; */
+    height: auto;
+  }
+
+  .head-search {
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  .input-option {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .select-options {
+    width: 30%;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .actions p {
+    font-size: 12px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .nav-list a{
+    padding: 10px;
+    text-align: start;
+    
+  }
+
+  .payment, .shipto-select {
+    padding:0 auto;
+    height: auto;
+    text-align: end;
+  }
+}
+
+/* For small screens / mobiles (≤768px) */
+@media (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    /* .head {
+    display: flex;
+    /* flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 10px; 
+    height: auto;
+    
+  } */
+  
+
+  .head-logo {
+    margin-bottom: 10px;
+  }
+
+  .head-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+  }
+
+   .select-options, .search-button {
+    width: 30%;
+    border-radius: 6px;
+  }
+
+  /* .actions {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .actions div p {
+    display: none; /* Show only icons on small screens 
+  } */
+
+  
+  .menu-toggle {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        color: #043887;
+    }
+}
+
+/* For very small devices (≤480px) */
+@media (max-width: 480px) {
+  .input-option {
+    width: 65%;
+    font-size: 12px;
+  }
+
+  .search-button {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  /* .actions i {
+    font-size: 18px;
+  } */
+  .menu-toggle {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        color: #043887;
+    }
+}
+/* =============================product section=========================================== */
+
+@media (max-width: 992px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+  .product-section {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .product-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-info {
+    margin-top: 20px;
+  }
+
+  .right-col {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .right-col .card {
+    flex: 1 1 48%;
+  }
+}
+/* ===== Mobile ===== */
+@media (max-width: 576px) {
+  .product-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 1000px;
+  }
+
+  .product-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumbnail-images {
+    width:100%;
+    display: flex;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .product-info h1 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .price-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .right-col {
+    flex-direction: column;
+  }
+
+  .right-col .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* =============================Tab- section=========================================== */
+/* ===== Base (Desktop) ===== */
+ .tabs-section {
+  background: #fff;
+  padding-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-width: 950px;
+
+  box-sizing: border-box;
+  
+}
+
+
+
+/* ===== Tablet ===== */
+@media (max-width: 992px) {
+  .tabs-section {
+    max-width: 60%;
+    padding-top: 15px;
+    width: 80%;
+    position: relative;
+    top: 700px;
+    
+  }
+
+  .tabs {
+    justify-content: space-between;
+  }
+
+  .tabs .tab {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .spec-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 576px) {
+  .tabs-section {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .tabs .tab {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .tab-content {
+    font-size: 14px;
+  }
+
+  .description-list {
+    margin-left: 10px !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+/* =============================Footer=========================================== */
+
+
+@media (max-width: 576px) {
+
+  .foot-info-section {
+    display: flex;
+    flex-direction: column; /* stack sections */
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 300px;
+  }
+
+  /* --- Social Media Block --- */
+  .social-media-block {
+    width: auto; /* shrink to content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px; /* space before lists */
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+  }
+  .about-block,
+  .partnership-block,
+  .info-block,
+  .users-block,
+  .get-app-block {
+    width: 50%; /* 2 columns layout on mobile */
+    margin-bottom: 50px;
+  }
+
+  .lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lists li {
+    margin: 6px 0;
+  }
+  .foot-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* --- Copyright bar --- */
+   .copyright-bar {
+    display:flex; 
+    justify-content: space-evenly;
+    align-items: center;  
+    text-align: center;       
+  }
+  .payment select {
+    width: 100%;              
+    max-width: 250px;         
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}

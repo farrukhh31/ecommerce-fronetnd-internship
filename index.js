@@ -154,6 +154,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const actions = document.querySelector(".actions");
+
+  toggle.addEventListener("click", () => {
+    actions.style.display = actions.style.display === "flex" ? "none" : "flex";
+  });
+});
 
 
 
